@@ -1,5 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
+﻿using ImageGallery.Data.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ImageGallery.Data
 {
