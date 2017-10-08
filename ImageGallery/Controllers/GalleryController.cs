@@ -10,7 +10,12 @@ namespace ImageGallery.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var model = new GalleryIndexModel()
+            {
+
+            };
+
+            return View(model);
         }
     }
 }
