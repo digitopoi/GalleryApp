@@ -1,9 +1,14 @@
 ﻿.gallery-content {
     padding: 24px;
-
 }
 
 .gallery-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gallery-image-container {
     padding: 8px;
     background: #fff;
     border-radius: 2px;
