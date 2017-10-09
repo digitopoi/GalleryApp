@@ -29,26 +29,29 @@ namespace ImageGallery.Controllers
                 Id = 2
             };
 
+            hikingImageTags.Add(tag1);
+            cityImageTags.AddRange(new List<ImageTag>{ tag2, tag3 });
+
             var imageList = new List<GalleryImage>()
             {
                 new GalleryImage()
                 {
                     Title = "Hiking Trip",
-                    Url = "",
+                    Url = "https://static.pexels.com/photos/596126/pexels-photo-596126.jpeg",
                     Created = System.DateTime.Now,
                     Tags = hikingImageTags
                 },
                 new GalleryImage()
                 {
                     Title = "On the Trail",
-                    Url = "",
+                    Url = "https://static.pexels.com/photos/269809/pexels-photo-269809.jpeg",
                     Created = System.DateTime.Now,
                     Tags = hikingImageTags
                 },
                 new GalleryImage()
                 {
                     Title = "Downtown",
-                    Url = "",
+                    Url = "https://static.pexels.com/photos/374710/pexels-photo-374710.jpeg",
                     Created = System.DateTime.Now,
                     Tags = cityImageTags
                 }
@@ -56,7 +59,8 @@ namespace ImageGallery.Controllers
 
             var model = new GalleryIndexModel()
             {
-                Images = imageList
+                Images = imageList,
+                SearchQuery = ""
             };
 
             return View(model);
